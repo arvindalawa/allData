@@ -1,0 +1,19 @@
+<template>
+    <lightning-card class={getClass}>
+                <div class="slds-text-align_center slds-text-heading_small font-bold">
+                    <template if:true={primaryvalue}>
+                        <span class="slds-p-right_small"
+                            >{primaryvalue}</span
+                        >
+                    </template>
+                    <template if:true={secondaryvalue}>
+                        <span class="slds-border_left slds-p-left_x-small"
+                            >{secondaryvalue}</span
+                        >
+                    </template>
+                </div>
+            <template if:true={isValueNull}>
+                <div class="slds-text-align_center slds-p-left_x-small">---</div>
+            </template>
+    </lightning-card>
+</template>

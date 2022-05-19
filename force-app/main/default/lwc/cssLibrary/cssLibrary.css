@@ -1,0 +1,5 @@
+c-card {
+    border: solid var(--lwc-borderWidthThin, 1px) #ecebea;
+    border-radius: var(--lwc-borderRadiusMedium, 4px);
+    padding: 0 var(--lwc-varSpacingXxxSmall, 2px);
+}

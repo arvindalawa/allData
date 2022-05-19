@@ -1,0 +1,147 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color);
+    scroll-behavior: smooth;
+    color: var(--font-color);
+}
+   
+#main {
+    margin: 0 20px 0 70px;
+}
+
+.border-gray {
+    border: 1px solid #b3b3b3 !important;
+}
+.bg-gray {
+    background: #f5f6f8;
+}
+c-card .slds-card {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+c-card .slds-card__body {
+    width: 100%;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.slds-card .slds-card,
+.slds-card .slds-card-wrapper,
+.slds-card-wrapper .slds-card,
+.slds-card-wrapper .slds-card-wrapper,
+.slds-modal .slds-card,
+.slds-modal .slds-card-wrapper,
+.slds-tabs--default .slds-card,
+.slds-tabs--default .slds-card-wrapper,
+.slds-tabs_card .slds-card,
+.slds-tabs_card .slds-card-wrapper,
+.slds-tabs_card.slds-tabs_card .slds-card,
+.slds-tabs_card.slds-tabs_card .slds-card-wrapper,
+.slds-tabs_default .slds-card,
+.slds-tabs_default .slds-card-wrapper {
+    background: #f5f6f8;
+}
+
+c-card .slds-card__header {
+    margin: 0;
+    padding: 0;
+}
+
+.slds-progress-bar .slds-progress-bar__value {
+    transition: width 0.2s linear;
+}
+
+.slds-progress-bar__value {
+    background: #4ebc9b;
+}
+
+.border-danger article {
+    border: 1px solid red !important;
+    border-left: 5px solid red !important;
+}
+.border-warning article {
+    border: 1px solid orange !important;
+    border-left: 5px solid orange !important;
+}
+.slds-modal__content:last-child, .slds-modal__content_has-hidden-footer {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.slds-modal__close{
+    right: 17px;
+    top: -17px;
+}
+
+input[type=search].slds-input {
+    padding-left: 0.7rem;
+    padding-right: 3rem;
+}
+.slds-input-has-icon_left-right .slds-input__icon_left {
+    right: 0.75rem;
+    left: auto;
+}
+
+.slds-listbox__option-icon, .slds-card__header {
+    display: none !important;
+}
+lightning-base-combobox-item[aria-checked=true] .slds-truncate {
+    color: var(--menu-active-color);
+}
+.slds-truncate {
+    font-size: 12px;
+}
+
+.slds-combobox__input:focus {
+    border-color: var(--menu-focus)
+}
+/* .slds-button:not(.slds-button_icon) {
+    padding: 7px 30px;
+    font-size: 12px;
+    line-height: 14px;
+} */
+
+/* .slds-button-group .slds-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} */
+button[data-element-id=searchClear] {
+    right: 2rem !important;
+}
+
+c-card-detail .slds-card__header  {
+    display: none !important;
+}
+c-card-detail .slds-card__body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+c-card-detail .slds-card.slds-card_narrow {
+    background-color: var(--card-detail-bg);
+    color: var(--card-detail-header-text-color);
+    border: 1px solid var(--card-detail-border-color);
+    border-radius: 4px;
+}
+
+c-card-detail .slds-card__footer {
+    background-color: var(--white-color);
+    color: var(--font-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+/* header style */
+.slds-context-bar {
+    padding-left: 0;
+}
