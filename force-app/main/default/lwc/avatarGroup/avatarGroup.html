@@ -1,0 +1,18 @@
+<template>
+        <template  for:each={avatar} for:item="avatar">
+            <div class="provus-avatar-group__container" key={avatar.id}>
+                <c-avatar 
+                    initials={avatar.initials}
+                    fallback-icon={avatar.fallbackIcon}
+                    alt-text={avatar.altText} 
+                    class-name={avatar.className}
+                    variant={avatar.variant}
+                    size={avatar.size}
+                    background-color={avatar.backgroundColor}
+                    image={avatar.image} 
+                >
+                </c-avatar>
+            </div>    
+        </template>
+    <lightning-formatted-text class="slds-text-heading_medium slds-p-left_large slds-p-top_xx-large slds-m-top_xx-large" value={result}></lightning-formatted-text>       
+</template>

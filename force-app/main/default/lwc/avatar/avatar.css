@@ -1,0 +1,25 @@
+.provus-avatar-fallback-color--yellow {
+    --sds-c-icon-color-background: #FFF4CE;
+    --sds-c-avatar-text-color: #323232;
+    --sds-c-icon-color-foreground: #323232;
+}
+.provus-avatar-fallback-color--blue {
+    --sds-c-icon-color-background: #CAFFF3;
+    --sds-c-avatar-text-color: #323232;
+    --sds-c-icon-color-foreground: #323232;
+}
+.provus-avatar-fallback-color--grey {
+    --sds-c-icon-color-background: #EFEFEF;
+    --sds-c-avatar-text-color: #323232;
+    --sds-c-icon-color-foreground: #323232;
+}
+.provus-avatar-fallback-color--green {
+    --sds-c-icon-color-background:#63a797;
+    --sds-c-avatar-text-color: #323232;
+    --sds-c-icon-color-foreground: #323232;
+}
+.provus-avatar-fallback-color--purple {
+    --sds-c-icon-color-background:#DCE8FF;
+    --sds-c-avatar-text-color: #323232;
+    --sds-c-icon-color-foreground: #323232;
+}
