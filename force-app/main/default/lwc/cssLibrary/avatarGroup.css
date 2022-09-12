@@ -1,0 +1,6 @@
+.provus-avatar-group__container {
+    float: left;
+    margin-right: -1%;
+    position: relative;
+    z-index: 1;
+}
