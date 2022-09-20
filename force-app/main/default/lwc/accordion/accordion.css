@@ -2,3 +2,14 @@
     background-color: #F2F2F2;
     padding-bottom: 10px;
 }
+div .provus_button{
+    right: 0;
+    margin: 300px;
+}
+.host .slds-accordion__summary-heading > button > span {
+    order: 1;
+}
+
+.host .slds-accordion__summary-heading > button > lightning-primitive-icon {
+    order: 2;
+}
