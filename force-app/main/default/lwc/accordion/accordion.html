@@ -1,34 +1,49 @@
 <template>
-    <template for:each={accordion} for:item="accord">
-        <div class="slds-p-left_large slds-text-heading_small" key = {accord.id} >
-            
-                <lightning-formatted-text  data-id={accord.id} name="Title" value={accord.title_label} onclick={handleClick} linkify></lightning-formatted-text>          
-                <lightning-button-icon  data-id={accord.id} icon-name={clickedButtonLabel} title="Show" onclick={handleClick} class="provus_button"></lightning-button-icon>
-         
-            <lightning-accordion allow-multiple-sections-open
-                                active-section-name={activeSections}
-                                >
-                
-                <template for:each={accord.accordionData} for:item="item">
-                        <div  key={item.id} class="slds-box slds-box_small slds-m-bottom_large accordion__container ">
-                            <lightning-accordion-section  name={item.name} label={item.label}>
-                                <p>{item.para}</p>
-                                <lightning-button-menu slot="actions"
-                                    alternative-text="Show menu"
-                                    icon-name="utility:threedots_vertical"
-                                    icon-size="x-small"
-                                    menu-alignment="right"
-                                    >
-                                    <template for:each={item.menu} for:item="menus">
-                                        <div key={menus.label}>
-                                            <lightning-menu-item value="New" label={menus.menu_label}></lightning-menu-item>
-                                        </div>
-                                    </template>
-                                </lightning-button-menu>
-                            </lightning-accordion-section>
-                        </div>
-                </template>
-            </lightning-accordion>
-        </div>        
-    </template>    
-</template> 
+
+	<template for:each={accordion} for:item="accord">
+		<div class="slds-p-left_large slds-text-heading_small" key={accord.id}>
+			<lightning-formatted-text
+				data-id={accord.id}
+				name="Title"
+				value={accord.title_label}
+				onclick={handleClick}
+				linkify
+			></lightning-formatted-text>
+			<lightning-button-icon
+				data-id={accord.id}
+				icon-name={clickedButtonLabel}
+				title="Show"
+				onclick={handleClick}
+				class="provus_accordion_button"
+				size="large"
+			></lightning-button-icon>
+
+			<lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+				<template for:each={accord.accordionData} for:item="item">
+					<div
+						key={item.id}
+						class="slds-box slds-box_small slds-m-bottom_large accordion__container"
+					>
+						<lightning-accordion-section name={item.name} label={item.label}>
+							<p>{item.content}</p>
+                            <slot name="form"></slot>
+							<lightning-button-menu
+								slot="actions"
+								alternative-text="Show menu"
+								icon-name="utility:threedots_vertical"
+								icon-size="x-small"
+								menu-alignment="right"
+							>
+								<template for:each={item.menu} for:item="menus">
+									<div key={menus.label}>
+										<lightning-menu-item value="New" label={menus.menu_label}></lightning-menu-item>
+									</div>
+								</template>
+							</lightning-button-menu>
+						</lightning-accordion-section>
+					</div>
+				</template>
+			</lightning-accordion>
+		</div>
+	</template>
+</template>

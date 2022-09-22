@@ -2,9 +2,10 @@
     background-color: #F2F2F2;
     padding-bottom: 10px;
 }
-div .provus_button{
+.provus_accordion_button{
     right: 0;
     margin: 300px;
+    --sds-c-button-color-border: #323232;
 }
 .host .slds-accordion__summary-heading > button > span {
     order: 1;

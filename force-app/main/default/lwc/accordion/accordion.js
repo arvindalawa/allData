@@ -8,13 +8,13 @@ activeSectionsMessage = '';
 @track isVisible;
 @track clickedButtonLabel = 'utility:chevrondown';
 
+// handleClick funcion will expand and collapse the comonent on button toggle
 handleClick(event) {
 	if (!this.activeSections.length) {
 		this.activeSections = [];
 		this.accordion.forEach((item) => {
 			if (item.id == event.target.dataset.id) {
 				this.clickedButtonLabel = 'utility:chevronup';
-
 				item.accordionData.forEach((accord) => {
 					this.activeSections.push(accord.name);
 				});
@@ -30,25 +30,24 @@ connectedCallback() {
 	this.accordion = data;
 	this.getActiveSections();
 }
+// getactiveSectionName will return active section name
 getactiveSectionName() {
 	for (let i = 0; i <= this.accordion.length; i++) {
 		this.activeSections = this.accordion[i].activeSections;
 	}
 }
-getActiveSections(event) {
+// getActiveSections will get active section names form data and will show those components by default expanded
+getActiveSections() {
 	this.activeSections = [];
 	this.accordion.forEach((activeItem) => {
 		if (activeItem.isVisible === true) {
-			this.activeSections = [...this.activeSections, ...activeItem.activeSections];
-		} else if (activeItem.isVisible === true && activeItem.activeSections.length === 0) {
-			this.activeSections = [];
-			this.accordion.forEach((item) => {
-				if (item.id == event.target.dataset.id) {
-					item.accordionData.forEach((accord) => {
-						this.activeSections.push(accord.name);
-					});
-				}
-			});
+			if (activeItem.activeSections.length) {
+				this.activeSections = [...this.activeSections, ...activeItem.activeSections];
+			} else {
+				activeItem.accordionData.forEach((accord) => {
+					this.activeSections.push(accord.name);
+				});
+			}
 		}
 	});
 }
