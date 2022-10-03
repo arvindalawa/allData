@@ -10,8 +10,13 @@ export const data = [
 				label: 'Accordion Title A',
 				subtext: '#Number of users',
 				name: 'A',
+				slot_names: 'form',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
+
 					{
 						menu_label: 'Menu 1',
 						link: 'www.google.com',
@@ -24,6 +29,7 @@ export const data = [
 						menu_label: 'Menu 3',
 						link: 'www.google.com',
 					},
+
 				],
 
 			},
@@ -33,6 +39,9 @@ export const data = [
 				subtext: '#Number of users',
 				name: 'B',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
 					{
 						menu_label: 'Menu A',
@@ -55,7 +64,11 @@ export const data = [
 				subtext: '#Number of users',
 				name: 'C',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
+
 					{
 						menu_label: 'Menu a',
 						link: 'www.google.com',
@@ -68,8 +81,8 @@ export const data = [
 						menu_label: 'Menu c',
 						link: 'www.google.com',
 					},
-				],
 
+				],
 			},
 		],
 
@@ -77,7 +90,7 @@ export const data = [
 	{
 		id: 2,
 		title_label: 'Scoping Questions 2',
-		isVisible: true,
+		isVisible: false,
 		activeSections: [],
 		accordionData: [
 			{
@@ -86,29 +99,11 @@ export const data = [
 				subtext: '#Number of users',
 				name: '1',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
-					{
-						menu_label: 'Menu 1',
-						link: 'www.google.com',
-					},
-					{
-						menu_label: 'Menu 2',
-						link: 'www.google.com',
-					},
-					{
-						menu_label: 'Menu 3',
-						link: 'www.google.com',
-					},
-				],
 
-			},
-			{
-				id: 2,
-				label: 'Accordion Title 2',
-				subtext: '#Number of users',
-				name: '2',
-				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
-				menu: [
 					{
 						menu_label: 'Menu A',
 						link: 'www.google.com',
@@ -121,8 +116,35 @@ export const data = [
 						menu_label: 'Menu C',
 						link: 'www.google.com',
 					},
+
 				],
 
+			},
+			{
+				id: 2,
+				label: 'Accordion Title 2',
+				subtext: '#Number of users',
+				name: '2',
+				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
+				menu: [
+
+					{
+						menu_label: 'Menu 1',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu 2',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu 3',
+						link: 'www.google.com',
+					},
+
+				],
 			},
 			{
 				id: 3,
@@ -130,7 +152,11 @@ export const data = [
 				subtext: '#Number of users',
 				name: '3',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
+
 					{
 						menu_label: 'Menu a',
 						link: 'www.google.com',
@@ -143,6 +169,7 @@ export const data = [
 						menu_label: 'Menu c',
 						link: 'www.google.com',
 					},
+
 				],
 
 			},
@@ -153,7 +180,7 @@ export const data = [
 		id: 3,
 		title_label: 'Scoping Questions 3',
 		isVisible: true,
-		activeSections: ['002'],
+		activeSections: [],
 		accordionData: [
 			{
 				id: 1,
@@ -161,6 +188,72 @@ export const data = [
 				subtext: '#Number of users',
 				name: '001',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
+				menu: [
+
+					{
+						menu_label: 'Menu 1',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu 2',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu 3',
+						link: 'www.google.com',
+					},
+
+				],
+
+			},
+			{
+				id: 2,
+				label: 'Accordion Title 002',
+				subtext: '#Number of users',
+				name: '002',
+				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
+				menu: [
+
+					{
+						menu_label: 'Menu a',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu b',
+						link: 'www.google.com',
+					},
+					{
+						menu_label: 'Menu c',
+						link: 'www.google.com',
+					},
+
+				],
+
+			},
+		],
+
+	},
+	{
+		id: 4,
+		title_label: 'Scoping Questions 3',
+		isVisible: true,
+		activeSections: ['P', 'Q'],
+		accordionData: [
+			{
+				id: 1,
+				label: 'Accordion Title P',
+				subtext: '#Number of users',
+				name: 'P',
+				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
 					{
 						menu_label: 'Menu 1',
@@ -179,23 +272,28 @@ export const data = [
 			},
 			{
 				id: 2,
-				label: 'Accordion Title 002',
+				label: 'Accordion Title Q',
 				subtext: '#Number of users',
-				name: '002',
+				name: 'Q',
 				content: 'Dummy text Donec vitae tellus egestas, faucibus ipsum ac, imperdiet erat. Nam venenatis non ante at sagittis.',
+				menuAlternativeText: 'Show menu',
+				menuIconName: 'utility:threedots_vertical',
+				menuSize: 'x-small',
 				menu: [
+
 					{
-						menu_label: 'Menu A',
+						menu_label: 'Menu a',
 						link: 'www.google.com',
 					},
 					{
-						menu_label: 'Menu B',
+						menu_label: 'Menu b',
 						link: 'www.google.com',
 					},
 					{
-						menu_label: 'Menu C',
+						menu_label: 'Menu c',
 						link: 'www.google.com',
 					},
+
 				],
 
 			},

@@ -1,5 +1,4 @@
 <template>
-
 	<template for:each={accordion} for:item="accord">
 		<div class="slds-p-left_large slds-text-heading_small" key={accord.id}>
 			<lightning-formatted-text
@@ -11,14 +10,14 @@
 			></lightning-formatted-text>
 			<lightning-button-icon
 				data-id={accord.id}
-				icon-name={clickedButtonLabel}
+				icon-name={accord.buttonLabel}
 				title="Show"
 				onclick={handleClick}
 				class="provus_accordion_button"
 				size="large"
 			></lightning-button-icon>
 
-			<lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+			<lightning-accordion data-id={accord.id} allow-multiple-sections-open active-section-name={activeSections} onsectiontoggle={handleSectionToggle}>
 				<template for:each={accord.accordionData} for:item="item">
 					<div
 						key={item.id}
@@ -29,9 +28,9 @@
                             <slot></slot>
 							<lightning-button-menu
 								slot="actions"
-								alternative-text="Show menu"
-								icon-name="utility:threedots_vertical"
-								icon-size="x-small"
+								alternative-text={item.menuAlternativeText}
+								icon-name={item.menuIconName}
+								icon-size={item.menuSize}
 								menu-alignment="right"
 							>
 								<template for:each={item.menu} for:item="menus">
@@ -39,7 +38,7 @@
 										<lightning-menu-item value="New" label={menus.menu_label}></lightning-menu-item>
 									</div>
 								</template>
-							</lightning-button-menu>
+							</lightning-button-menu> 
 						</lightning-accordion-section>
 					</div>
 				</template>

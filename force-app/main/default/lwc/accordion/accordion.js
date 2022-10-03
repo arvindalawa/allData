@@ -3,33 +3,58 @@ import { data } from './accordion-data';
 
 export default class LightningExampleAccordionMultiple extends LightningElement {
 @track activeSections = [];
-activeSectionsMessage = '';
 @api accordion = [];
 @track isVisible;
-@track clickedButtonLabel = 'utility:chevrondown';
-
-// handleClick funcion will expand and collapse the comonent on button toggle
-handleClick(event) {
-	if (!this.activeSections.length) {
-		this.activeSections = [];
-		this.accordion.forEach((item) => {
-			if (item.id == event.target.dataset.id) {
-				this.clickedButtonLabel = 'utility:chevronup';
-				item.accordionData.forEach((accord) => {
-					this.activeSections.push(accord.name);
-				});
-			}
-		});
-	} else {
-		this.clickedButtonLabel = 'utility:chevrondown';
-		this.activeSections = [];
-	}
-}
 
 connectedCallback() {
 	this.accordion = data;
+
+	if (this.accordion && this.accordion.length) {
+		this.accordion.forEach((item) => {
+			if (item.accordionData.length > item.activeSections.length) {
+				item.buttonLabel = 'utility:chevrondown';
+			} else if (item.accordionData.length == item.activeSections.length) {
+				item.buttonLabel = 'utility:chevronup';
+			}
+		});
+	}
+
 	this.getActiveSections();
 }
+
+// handleSectionToggle is a function to expand and collapse component
+handleSectionToggle(event) {
+	this.accordion.forEach((item) => {
+		if (item.id == event.target.dataset.id) {
+			const { openSections } = event.detail;
+			if (openSections.length === 0) {
+				item.buttonLabel = 'utility:chevrondown';
+			} else {
+				item.buttonLabel = 'utility:chevronup';
+			}
+		}
+	});
+}
+
+// handleClick funcion will expand and collapse the comonent on button toggle
+handleClick(event) {
+	this.accordion.forEach((item) => {
+		if (item.id == event.target.dataset.id) {
+			if (item.buttonLabel == 'utility:chevrondown') {
+				item.accordionData.forEach((accord) => {
+					this.activeSections = [...this.activeSections, accord.name];
+				});
+				item.buttonLabel = 'utility:chevronup';
+			} else if (item.buttonLabel == 'utility:chevronup') {
+				item.accordionData.forEach((accord) => {
+					this.activeSections = this.activeSections.filter((value) =>	value != accord.name);
+				});
+				item.buttonLabel = 'utility:chevrondown';
+			}
+		}
+	});
+}
+
 // getactiveSectionName will return active section name
 getactiveSectionName() {
 	for (let i = 0; i <= this.accordion.length; i++) {
