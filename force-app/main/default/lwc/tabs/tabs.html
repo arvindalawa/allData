@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-tabs_default">
+            <ul class="slds-tabs_defaultnav tab-container" role="tablist">
+                    <li class="" title="Item One" id={data.id} aria-controls="tab-default-1" role="presentation" key={data.id} for:each={labels} for:item="data" onclick={tabClick}>
+                    <!-- <a class="slds-tabs_defaultlink" role="tab" tabindex="0" aria-selected="true"  > -->
+                        {data.label}<br>
+                       <span>{data.amount}</span> 
+                    <!-- </a> -->
+                    </li>
+            </ul> 
+    </div>
+        <div id={data.id2} class="slds-tabs_defaultcontent slds-hide" role="tabpanel" key={data.id} for:each={labels} for:item="data"  aria-labelledby={data.id}>
+            {data.data}
+            <slot></slot>
+        </div>
+</template>

@@ -11,8 +11,8 @@ export default class Basic extends LightningElement {
     @api primaryvalue = '';
     @api secondaryvalue = '';
 
-    connectedCallback() {
-        loadStyle(this, external_css); 
+    async connectedCallback() {
+        await loadStyle(this, external_css); 
         //you can add a .then().catch() if you'd like, as loadStyle() returns a promise
     }
 

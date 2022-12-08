@@ -1,0 +1,8 @@
+<template > 
+    <lightning-tabset id='tab-1'>
+        <lightning-tab key={data.label}   for:each={labels} for:item="data" label={data.label}>
+            {data.data}
+        </lightning-tab>
+    </lightning-tabset>
+</template>
+

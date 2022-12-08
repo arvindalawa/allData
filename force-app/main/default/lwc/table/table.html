@@ -1,0 +1,14 @@
+<template>
+  <!--A very basic data table-->
+  <div class="">
+  <lightning-datatable
+              key-field="id"
+              columns={columns}
+              data={data}
+              suppress-bottom-bar
+              hide-checkbox-column="true"
+              >
+          </lightning-datatable>
+          <slot></slot>
+        </div>
+</template>

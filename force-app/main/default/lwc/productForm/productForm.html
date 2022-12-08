@@ -1,0 +1,87 @@
+<template>
+    <lightning-layout>
+       
+            <lightning-record-edit-form object-api-name="ProductForm" field-names={nameField}  onsuccess={handleSave}>
+                <!-- <div class="slds-col slds-size_1-of-2"> -->
+                    <!-- <lightning-input-field field-name={nameField}></lightning-input-field> -->
+                    <!-- <lightning-input-field field-name={websiteField}></lightning-input-field>
+                    <lightning-input-field field-name={phoneField}></lightning-input-field>
+                    <lightning-input-field field-name={numberField}></lightning-input-field> -->
+                <!-- </div> -->
+            </lightning-record-edit-form>
+    </lightning-layout>
+    
+</template>
+
+<!-- <div class="slds-grid slds-wrap" style="width:50vw"> -->
+
+    <!-- <lightning-record-edit-form> -->
+<!--         
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input id="productName" type="text" label="Product Name" onchange={handleProductName} placeholder="Product Name..." required></lightning-input>
+        <lightning-input id="productCode" type="text" label="Product Code" onchange={handleProductCode} placeholder="Product Code..."></lightning-input>
+        <lightning-combobox
+        id="practice"
+        name="progress"
+        label="Practice"
+        value={value}
+        placeholder="Select Progress"
+        options={options}
+        onchange={handlePractice} ></lightning-combobox>
+        <lightning-combobox
+        id="group"
+        name="progress"
+        label="Group"
+        value={value}
+        placeholder="Select Progress"
+        options={options}
+        onchange={handleGroup} ></lightning-combobox>
+          </div>
+          <div class="slds-col slds-size_1-of-2">
+            <lightning-combobox
+            id="productFamily"
+            name="progress"
+            label="Product Family"
+            value={value}
+            placeholder="Select Progress"
+            options={options}
+            onchange={handleFamily} ></lightning-combobox>
+            <lightning-input class="slds-p-left_xx-medium" type="checkbox" label="Active" onchange={handleActive} ></lightning-input>
+            <div class="header-column">
+                <p class="field-title"  title="Field 1">Record Type</p>
+                <p style="font-weight:bold;" id="recordTypeName">{recordType}</p>
+
+            </div>
+            <div class="slds-form-element">
+                <label class="slds-form-element__label"  for="text-input-id-1">Associated Product</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <lightning-icon id="associatedProduct" size="x-small" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+                    <input onchange={handleProduct} type="text" id="text-input-id-1" placeholder="Search Products" class="slds-input" />
+                </div>
+                <label class="slds-form-element__label" for="text-input-id-1">Products</label>
+
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right" >
+                    <lightning-icon size="x-small" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+                    <input type="text" onchange={handleProducts} id="text-input-id-2" placeholder="Search Product" class="slds-input" />
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <lightning-textarea onchange={handleDescription} name="input3" label="Textarea field with a placeholder" placeholder="type here..."></lightning-textarea>
+        <lightning-button
+            type="cancel"
+            name="cancel"
+            label="Cancel"
+            onclick={handleCancel}>
+        </lightning-button><lightning-button
+        type="Save & New"
+        name="Save & New"
+        label="Save & New"
+        onclick={handleSaveAndNew}>                
+    </lightning-button><lightning-button
+    type="submit"
+    name="save"
+    label="Save"
+    >
+</lightning-button> -->

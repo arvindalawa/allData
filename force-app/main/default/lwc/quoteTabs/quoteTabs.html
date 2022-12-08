@@ -1,0 +1,21 @@
+<template>
+	<div class="slds-tabs_default">
+		<ul class="slds-tabs_default__nav tab-container" role="tablist">
+			<template for:each={tabs} for:item="tab">
+				<li
+					class={tab.activeClass}
+					title={tab.label}
+					id={tab.id}
+					aria-controls={tab.id}
+					role="presentation"
+					key={tab.id}
+					onclick={handleTabClick}
+				>
+					<label>{tab.label}</label>
+					<span>{tab.amount}</span>
+				</li>
+			</template>
+		</ul>
+		<slot></slot>
+	</div>
+</template>

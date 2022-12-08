@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@salesforce/ts-types": "^1.5.20",
+    "chartjs": "^0.3.24",
     "rollup-plugin-lwc-typescript": "^1.0.1",
     "typescript": "^4.6.4"
   }

@@ -1,0 +1,64 @@
+
+tbody  td:nth-child(1){
+    visibility:hidden ;
+    /* display:none; */
+}
+div[class='slds-cell-fixed'] span[class='slds-th__action']{
+    display: none !important;
+}
+/* table[role='grid']{
+    border-top: 4px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+} */
+.slds-button_icon-bare{
+    display: none;
+    /* drop-down hidden */
+}
+.slds-th__action{
+    background-color: #DDDBDA;
+    justify-content: center;
+    color: black;
+/* overall india usa Heading */
+
+} 
+.slds-th__action:hover{
+    background-color: #DDDBDA; 
+    /* overall india usa Heading to hide bydefault hover of data table */
+}
+th[aria-label='Name'] span[class='slds-th__action']{
+    display: none; 
+    /* for 1st td which having name leble */
+}
+.bgColor:hover{
+    color: rgb(13, 13, 13);
+background-color: #E5EFFD;
+visibility: visible;
+/* visible edit icon */
+}
+.bgColor{
+background-color: #E5EFFD;
+color: black;
+font-weight: bold !important;
+}
+.slds-button__icon_edit{
+    visibility: hidden;
+    /* hide edit icon */
+}
+tr:hover .slds-button__icon_edit{
+    visibility: visible;
+    /* show edit icon */
+}
+tr:hover .slds-icon-text-error {
+    display:none;    
+}
+.specialData{
+    border-bottom: 4px solid #e5e5e5;
+}
+.emptyRow{
+    visibility: hidden;
+}
+.slds-hint-parent:hover .provus-bg_highlight {
+    background-color:rgba(255, 179, 91, 0.53) !important ;
+   
+    
+}

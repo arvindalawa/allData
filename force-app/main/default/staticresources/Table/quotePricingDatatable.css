@@ -1,0 +1,122 @@
+.quote-pricing-table tbody td:nth-child(1) { 
+	visibility: hidden; /* Hide index for table */
+}
+
+.quote-pricing-table thead tr th:nth-child(2),
+.quote-pricing-table tbody tr th:nth-child(1) {
+	visibility: hidden;
+}
+
+.quote-pricing-table .slds-table_header-fixed_container:before, .quote-pricing-table .slds-table--header-fixed_container:before {
+	border-bottom: 0;
+}
+
+.quote-pricing-table  .slds-table_header-fixed_container[lightning-datatable_table] > .slds-scrollable_y[lightning-datatable_table]::before {
+	border-bottom: 0;
+}
+.quote-pricing-table thead th:first-child {
+	visibility: hidden;
+}
+
+.quote-pricing-table .slds-table_header-fixed tbody tr:first-child th {
+	border-top: 1px solid #DDDBDA;
+}
+
+
+.quote-pricing-table tbody tr td , .quote-pricing-table tbody tr th {
+	border-right: 1px solid #DDDBDA;
+}
+
+.quote-pricing-table tbody tr th {
+	border-left: 1px solid #DDDBDA;
+}
+
+.quote-pricing-table .slds-button_icon-bare {
+	display: none; /* hide down arrow for table heading */
+}
+
+.quote-pricing-table .slds-th__action {
+	background-color: #DDDBDA;
+	justify-content: center;
+	color: #000;
+
+}
+
+
+.quote-pricing-table .slds-button__icon_edit {
+	visibility: hidden;
+	/* hide edit icon */
+}
+
+.quote-pricing-table td:hover .slds-button__icon_edit {
+	visibility: visible;
+	/* show edit icon */
+}
+
+.quote-pricing-table tr:hover .slds-icon-text-error {
+	display: none;
+}
+
+
+.emptyRow {
+	visibility: hidden;
+}
+
+
+/* Utility Classes */
+.provus-bg_white {
+	background-color: #fff !important;
+}
+
+.provus-text_bold {
+	font-weight: bold;
+}
+
+.provus-bg_blue {
+	background-color: #E5EFFD;
+}
+
+.provus-border_bottom {
+	border-bottom: 5px solid #DDDBDA;
+}
+
+.provus-highlight-border_bottom {
+	border-bottom: 5px solid #DDDBDA;
+	background-color: #E5EFFD;
+}
+
+.provus-border_top {
+	border-top: 1px solid #fff;
+}
+
+.provus-border_brown {
+	border-top: 1px solid #DDDBDA;
+}
+
+.provus-bg_highlight {
+	background-color: rgba(255, 179, 91, 0.53);
+
+}
+.provus-border_white {
+	border-color: transparent;
+}
+
+.slds-hint-parent th:first-child {
+	border-left: 1px solid #DDDBDA;
+}
+
+.slds-hint-parent td:last-child {
+	border-right: 1px solid #DDDBDA;
+}
+
+.quote-pricing-table .slds-table_bordered, .quote-pricing-table .slds-table--bordered {
+	border-top: 0;
+}
+
+.quote-pricing-table .slds-table thead th {
+	border-right: 1px solid #DDDBDA;
+}
+
+.quote-pricing-table .slds-hint-parent:hover .provus-bg_highlight {
+	background-color: rgba(255, 179, 91, 0.53) !important;
+}

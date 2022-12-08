@@ -1,0 +1,21 @@
+<template>
+    <lightning-button if:false={isPopup}
+    variant="brand"
+    label="Products"
+    title="Begins the task"
+    onclick={handlePopup}
+>
+</lightning-button>
+<lightning-layout if:true={isPopup}>
+    <lightning-layout-item size="12px">
+            <!-- <c-todo-edit to-do-data={todoName} todo-done={done} todo-date={todoDate} onseteditable={editHandler} is-editable={isEditable}></c-todo-edit> -->
+            <c-product-type is-popup={isPopup} onsetispopup={handlePopup}></c-product-type>
+</lightning-layout-item>
+</lightning-layout>
+<!-- <lightning-layout if:true={isPopup}> -->
+    <!-- <lightning-layout-item size="12px"> -->
+            <!-- <c-todo-edit to-do-data={todoName} todo-done={done} todo-date={todoDate} onseteditable={editHandler} is-editable={isEditable}></c-todo-edit> -->
+            <!-- <c-product-type is-popup={isPopup} onsetispopup={handlePopup}></c-product-type> -->
+<!-- </lightning-layout-item> -->
+<!-- </lightning-layout> -->
+</template>
